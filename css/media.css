@@ -1,0 +1,131 @@
+@media (max-width: 991px) {
+    .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "item2 item2 item2 item2"
+
+            "item1 item1 item1 item1"
+
+            "item3 item3 item6 item6"
+
+            "item4 item4 item4 item4"
+
+            "item8 item8 item5 item5 "
+
+            "item7 item7 item5 item5"
+
+            "item9 item9 item9 item9"
+
+            "item10 item10 item10 item10"
+
+        ;
+    }
+
+    .item2 {
+        padding: 40px 0;
+    }
+
+    .item2 .box h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .item9 {
+        padding: 30px 0;
+    }
+
+    .item4 .image .box {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 492px) {
+    .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "item2 item2 item2 item2"
+
+            "item1 item1 item1 item1"
+
+            "item3 item3 item3 item3"
+
+            "item6 item6 item6 item6"
+
+            "item4 item4 item4 item4 "
+
+            "item8 item8 item8 item8"
+
+            "item7 item7 item7 item7"
+
+            "item5 item5 item5 item5"
+
+            "item5 item5 item5 item5"
+
+            "item9 item9 item9 item9"
+
+            "item10 item10 item10 item10"
+
+        ;
+    }
+
+    .item2 .box {
+        max-width: 100%;
+    }
+
+    .item2 .box h1 {
+        font-size: 10vw;
+        line-height: 55px;
+    }
+
+    .item1 {
+        flex-direction: column;
+    }
+
+    .item1 .text {
+        width: 100%;
+    }
+
+    .item1 img {
+        max-width: 100%;
+    }
+
+    .item4 {
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+
+    .item4 .image {
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item4 .image img {
+        width: 70%;
+    }
+
+    .item4 .text {
+        width: 100%;
+    }
+
+    .item10 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item10 h3 {
+        width: 100%;
+        margin-top: -10px;
+    }
+
+    .item10 img {
+        max-width: 70%;
+    }
+}
